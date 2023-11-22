@@ -47,7 +47,10 @@ public class PlayerRunning : MonoBehaviour
                     verticalVelocity -= gravity * Time.deltaTime;
                 }
 
-                moveVector.z = Input.GetAxis("Horizontal") * 5;
+                //moveVector.z = Input.GetAxis("Horizontal") * 5;
+
+                moveVector.x = Input.GetAxis("Horizontal") * 5;
+
                 //moveVector.y = verticalVelocity;
                 moveVector.z = speed;
 

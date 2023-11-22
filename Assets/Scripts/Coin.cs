@@ -15,7 +15,7 @@ public class Coin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.right, 1); // quay coin sang phai
+        transform.Rotate(Vector3.right, 5); // quay coin sang phai - theo truc X
     }
 
     public void Dead ()

@@ -13,6 +13,8 @@ public class PlayerCollider : MonoBehaviour
     {
         if (hit.gameObject.tag == "Coin")
         {
+            // play sound khi va cham coin
+
             hit.gameObject.GetComponent<Coin>().Dead(); // goi ham dead tu Coin
 
         }
