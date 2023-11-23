@@ -17,6 +17,9 @@ public class PlayerCollider : MonoBehaviour
 
             hit.gameObject.GetComponent<Coin>().Dead(); // goi ham dead tu Coin
 
+            // tang diem
+            GetComponent<ScoreManager>().TangDiem(1);
+
         }
         else if (hit.gameObject.tag == "Stone")
         {
@@ -32,10 +35,12 @@ public class PlayerCollider : MonoBehaviour
         else if (hit.gameObject.tag == "StoneLocation")
         {
             locationText.text = "Stone: Location";
+            //GetComponent<ScoreManager>().TangDiem(-1);
         }
         else if (hit.gameObject.tag == "HouseLocation")
         {
             locationText.text = "House: Location";
+            //GetComponent<ScoreManager>().TangDiem(-1);
         }
     }
 
