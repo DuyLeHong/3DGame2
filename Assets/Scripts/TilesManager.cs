@@ -5,9 +5,12 @@ using UnityEngine;
 public class TilesManager : MonoBehaviour
 {
 
-    public GameObject[] tilesPrefabs;
+    public GameObject[] tilesPrefabs; // mang dia hinh
+
     private Transform player;
+
     private List<GameObject> activeTiles; // cac dia hinh dang active
+
     private float tileLength = 44f; // chieu dai dia hinh
     private float spawnZ = -1f;
 
@@ -48,6 +51,7 @@ public class TilesManager : MonoBehaviour
 
         if (spawnZ == -1)
         {
+            //spawnZ = 0;
             spawnZ = tileLength / 2 - 3;
         }
 
